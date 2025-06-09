@@ -1,0 +1,48 @@
+
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+body {
+  white-space: pre;
+}
+
+#root {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+}
+
+.header {
+      padding: 20px 0;
+}
+
+.body {
+      margin-top: -200px; /* pulls body closer to header */
+}
+
+.examples{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 40px;
+  gap:20px;
+}
+
+.hello{
+  font-size: 25px;
+}
+
+.footer {
+      padding: 20px 0;
+}
+
+h1 {
+  font-size: 45px;
+      margin: 0;
+}

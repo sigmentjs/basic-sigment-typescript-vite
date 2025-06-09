@@ -1,0 +1,26 @@
+{
+  "name": "sigment-app",
+  "version": "1.0.0",
+  "description": "sigment app start",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "serve dist -s -l 4000",
+    "serve": "set NODE_ENV=dev&& node app.js",
+    "serve:prod": "set NODE_ENV=production&& node app.js",
+    "serve:prod:unix": "NODE_ENV=production node app.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.17.1",
+    "sigment": "^1.0.6"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
