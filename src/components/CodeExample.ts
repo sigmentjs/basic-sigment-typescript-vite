@@ -29,6 +29,10 @@ function CodeExample({ sourceCode, language = 'typescript', title, showCopy = tr
     }
   };
 
+  // Create the code element and set its HTML content manually
+  const codeElement = code({ class: `language-${language}` });
+  codeElement.innerHTML = highlightedCode;
+
   return div({ class: 'code-block-container' },
     title ? h3({ class: 'code-title' }, title) : null,
     div({ style: 'position: relative' },
@@ -36,12 +40,7 @@ function CodeExample({ sourceCode, language = 'typescript', title, showCopy = tr
         class: 'copy-button',
         onClick: copyToClipboard 
       }, 'Copy') : null,
-      pre({ class: `language-${language}` },
-        code({ 
-          class: `language-${language}`,
-          innerHTML: highlightedCode 
-        })
-      )
+      pre({ class: `language-${language}` }, codeElement)
     )
   );
 }
