@@ -2,18 +2,18 @@ import { highlightCode } from '../utils/codeHighlighter.js';
 import '../assets/css/prism-theme.css';
 
 interface CodeExampleProps {
-  code: string;
+  sourceCode: string;
   language?: string;
   title?: string;
   showCopy?: boolean;
 }
 
-function CodeExample({ code, language = 'typescript', title, showCopy = true }: CodeExampleProps): HTMLElement {
-  const highlightedCode = highlightCode(code, language);
+function CodeExample({ sourceCode, language = 'typescript', title, showCopy = true }: CodeExampleProps): HTMLElement {
+  const highlightedCode = highlightCode(sourceCode, language);
   
   const copyToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(code);
+      await navigator.clipboard.writeText(sourceCode);
       const button = document.querySelector('.copy-button') as HTMLButtonElement;
       if (button) {
         const originalText = button.textContent;

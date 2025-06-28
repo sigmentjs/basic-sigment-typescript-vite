@@ -48,19 +48,19 @@ addSigment("hello");`;
     
     CodeExample({
       title: 'Reactive Counter Component',
-      code: counterExample,
+      sourceCode: counterExample,
       language: 'typescript'
     }),
     
     CodeExample({
       title: 'Route Configuration',
-      code: routingExample,
+      sourceCode: routingExample,
       language: 'typescript'
     }),
     
     CodeExample({
       title: 'Custom Sigment Elements',
-      code: customSigmentExample,
+      sourceCode: customSigmentExample,
       language: 'typescript'
     }),
 
