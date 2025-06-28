@@ -1,74 +1,97 @@
-
-
 # Sigment App
 
-A lightweight frontend library application built with **[Sigment](https://www.npmjs.com/package/sigment)** — bundled with **Vite** and written in  **TypeScript**. Optionally, you can integrate an **Express.js** backend if needed.
+[![npm version](https://img.shields.io/npm/v/create-sigment-app?color=blue\&label=npm%20package)](https://www.npmjs.com/package/create-sigment-app)
+[![npm downloads](https://img.shields.io/npm/dm/create-sigment-app?color=green\&label=npm%20downloads)](https://www.npmjs.com/package/create-sigment-app)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/sigmentjs/sigment/ci.yml?branch=main\&label=build\&color=brightgreen)](https://github.com/sigmentjs/sigment/actions)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+A lightweight frontend starter built with **Sigment**, powered by **Vite** and written in **TypeScript**. Easily extendable with Express.js for backend needs.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-**A lightning-fast, reactive frontend** built with:  
-🧩 [**Sigment**](https://www.npmjs.com/package/sigment) — Fine-grained, elegant reactivity  
-⚡ **Vite** — Instant dev server + optimized production builds  
-- 📘 **TypeScript** — type-safe development 
-🌿 **Express-ready** — Drop-in backend support  
+* 🯉 **Sigment** — Fine-grained, signals-based reactivity
+* ⚡ **Vite** — Fast dev server and production bundling
+* 📜 **TypeScript** — Type-safe development
+* 🌿 **Express-ready** — Optional backend support
 
+---
 
-## 🌟 Why Sigment? 
+## 🌟 Why Sigment?
 
-```javascript
-// Example Sigment component
+> Elegant, zero-JSX reactivity with less than 5KB runtime.
 
+### 🔧 Example Sigment Component
+
+```ts
 import { signal } from 'sigment';
 
-function Counter(): HTMLElement  {
+function Counter(): HTMLElement {
   const [count, setCount] = signal(0);
 
-  return div({id:"counter"},
-
+  return div({ id: "counter" },
     h2('Sigment Reactive Framework'),
     h3('Counter example'),
     button({ onClick: () => setCount(count() + 1) }, 'Increment'),
     p(() => `Count is: ${count()}`)
-    
-  )
-
+  );
 }
 
 export default Counter;
+```
 
-
-✔ Reactive DX: Signals-based reactivity
-✔ Tiny footprint: <5kb runtime
-✔ Zero JSX: Pure JavaScript templates
+✅ Reactive DX: Signals-based reactivity
+✅ Tiny footprint: <5kb runtime
+✅ Zero JSX: Pure JavaScript templates
 
 ---
 
 ## ⚡ Quick Start
 
-1. **Clone the repository**
+### Option 1: Create a New App Instantly with `npx`
 
-   ```bash
-   git clone https://github.com/sigmentjs/basic-sigment-typescript-vite.git
-   cd basic-sigment-typescript-vite
+```bash
+npx create-sigment-app my-app
+cd my-app
+npm run dev
+```
 
-2. **install**
+### Option 2: Clone the Starter Template
 
-   ```bash
-   npm install
+```bash
+git clone https://github.com/sigmentjs/basic-sigment-typescript-vite.git
+cd basic-sigment-typescript-vite
+npm install
+npm run dev
+```
 
-3. **run dev**
+### Build for production
 
-   ```bash
-   npm run dev
+```bash
+npm run build
+```
 
-5. **build**
+### Preview production build locally
 
-   ```bash
-   npm run build
+```bash
+npm run preview
+```
 
-4. **serve locally**
+---
 
-   ```bash
-   npm run preview
+## 🖼️ Demo
+
+Coming soon — or [try on StackBlitz](https://stackblitz.com) or [CodeSandbox](https://codesandbox.io).
+
+---
+
+## 📚 Documentation
+
+* [Official Sigment Docs](https://sigment.dev)
+
+---
+
+## 📄 License
+
+[MIT](./LICENSE)
