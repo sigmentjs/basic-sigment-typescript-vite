@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/create-sigment-app?color=blue\&label=npm%20package)](https://www.npmjs.com/package/create-sigment-app)
 [![npm downloads](https://img.shields.io/npm/dm/create-sigment-app?color=green\&label=npm%20downloads)](https://www.npmjs.com/package/create-sigment-app)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/sigmentjs/sigment/ci.yml?branch=main\&label=build\&color=brightgreen)](https://github.com/sigmentjs/sigment/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/sigmentjs/sigment/ci.yml?branch=main\&label=build\&color=brightgreen)](https://github.com/sigmentjs?tab=repositories)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 A lightweight frontend starter built with **Sigment**, powered by **Vite** and written in **TypeScript**. Easily extendable with Express.js for backend needs.
