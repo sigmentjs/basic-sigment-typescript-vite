@@ -12,10 +12,10 @@ function Home(): HTMLElement  {
     span('   +Vite')),
     div({class:"examples"},
       div(
-        a({href:"http://localhost:3000/counter"},"Counter Example State")
+        a({href:"/counter"},"Counter Example State")
       ),
       div(
-        a({href:"http://localhost:3000/hello"},"Add Sigment Hello Example")
+        a({href:"/hello"},"Add Sigment Hello Example")
       )
     ),
  
