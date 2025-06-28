@@ -1,5 +1,3 @@
-
-
 export const Routes = {
   home: {
     loader: () => import('./Home.js')
@@ -13,6 +11,9 @@ export const Routes = {
   hello: {
     loader: () => import('./Hello.js'),
     cacheExpiration: 60000
+  },
+  examples: {
+    loader: () => import('./CodeExamples.js')
   },
 
   // fallback route: load login page if route not found
