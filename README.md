@@ -63,7 +63,7 @@ export default Counter;
    ```bash
    npm run dev
 
-4. **build**
+5. **build**
 
    ```bash
    npm run build
