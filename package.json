@@ -1,8 +1,19 @@
 {
-  "name": "sigment-app",
+  "name": "sigment-typescript-vite-starter",
   "version": "1.0.0",
-  "description": "sigment app start",
+  "description": "A lightweight frontend starter built with Sigment, powered by Vite and written in TypeScript",
   "main": "app.js",
+  "keywords": ["sigment", "typescript", "vite", "reactive", "signals", "frontend", "starter"],
+  "author": "Sigment Community",
+  "license": "MIT",
+  "homepage": "https://lustrous-platypus-172c72.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sigmentjs/basic-sigment-typescript-vite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sigmentjs/basic-sigment-typescript-vite/issues"
+  },
   "scripts": {
     "start": "node app.js",
     "dev": "vite",
