@@ -1,7 +1,9 @@
 # Sigment TypeScript Vite Starter
 
+[![Discord](https://img.shields.io/badge/Discord-Join%20Chat-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dqRRen9t)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://lustrous-platypus-172c72.netlify.app/)
 [![Open in Bolt](https://img.shields.io/badge/Open%20in-Bolt-FF6B35?style=for-the-badge&logo=stackblitz)](https://bolt.new/github/sigmentjs/basic-sigment-typescript-vite)
+
 
 A lightweight frontend starter built with **Sigment**, powered by **Vite** and written in **TypeScript**. Easily extendable with Express.js for backend needs.
 
